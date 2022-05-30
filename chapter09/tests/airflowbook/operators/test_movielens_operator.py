@@ -5,15 +5,14 @@ from pathlib import Path
 
 import pytest
 from airflow.models import DAG, Connection
-from pytest_docker_tools import fetch, container
-from pytest_mock import MockFixture
-
 from airflow_movielens.operators import (
     MovielensDownloadOperator,
     MovielensHook,
     MovielensToPostgresOperator,
     PostgresHook,
 )
+from pytest_docker_tools import fetch, container
+from pytest_mock import MockFixture
 
 
 @pytest.fixture(scope="module")
