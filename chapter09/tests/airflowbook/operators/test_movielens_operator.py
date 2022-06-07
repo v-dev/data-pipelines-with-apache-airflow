@@ -66,7 +66,7 @@ def test_movielens_operator(tmp_path: Path, mocker: MockFixture):
     )
 
 
-def xtest_movielens_to_postgres_operator(
+def test_movielens_to_postgres_operator(
     mocker: MockFixture, test_dag: DAG, postgres, postgres_credentials
 ):
     mocker.patch.object(
