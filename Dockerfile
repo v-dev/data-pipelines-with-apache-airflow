@@ -1,8 +1,8 @@
 FROM apache/airflow:2.0.0-python3.8
 
 USER airflow
-COPY requirements.txt /tmp/requirements.txt
-RUN pip install -r /tmp/requirements.txt
+COPY requirements.docker /tmp/requirements.docker
+RUN pip install -r /tmp/requirements.docker
 RUN airflow db init
 
 COPY chapter08/package/airflow-movielens /tmp/airflow-movielens

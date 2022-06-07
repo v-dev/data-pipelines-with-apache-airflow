@@ -32,3 +32,9 @@ Code for each Chapter is generally structured something like follows:
 Details for running specific chapter examples are available in the corresponding chapter's readme. In general, most code examples are run using docker-compose, together with the provided docker-compose.yml file in each chapter. This docker-compose file will take care of spinning up the required resources and start an Airflow instance for you. Once everything is running, you should be able to run the examples in Airflow using your local browser.
 
 Some later Chapters (such as Chapters 11 and 13) may require a bit more setup. The details for doing so are described in the corresponding readme's and in the Chapter's themselves.
+
+# vdev notes
+
+* `requirements.txt` - for venv w/o docker
+* `requirements.docker` - for running FROM apache/airflow:2.0.0-python3.8
+* `requirements.org` - original requirements file from book's source
